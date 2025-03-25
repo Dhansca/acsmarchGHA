@@ -19,11 +19,6 @@ provider "aws" {
 resource "aws_instance" "GHAEC2" {
     ami                    = "ami-0596d807260f25fc1"
     instance_type          = "t2.micro"
-    tags                   = 
-      {
-        name = "GHA-ACS730"
-        env  = "test"
-      }
 }
 
 resource "random_pet" "sg" {}
